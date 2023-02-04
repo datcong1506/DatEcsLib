@@ -1,0 +1,8 @@
+using Unity.Entities;
+using Unity.Transforms;
+
+readonly partial struct #SCRIPTNAME# : IAspect
+{
+    // !!! remove this if not needed
+    readonly TransformAspect Transform;
+}
