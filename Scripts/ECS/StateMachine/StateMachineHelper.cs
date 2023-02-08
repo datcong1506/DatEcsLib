@@ -11,8 +11,8 @@ namespace DatECSLib.StateMachine
         {
             baker.AddAndDisable<ExitState_Component>();
             baker.AddAndDisable<EnterState_Component>();
-            baker.AddAndDisable<ChangeStateRequest_Component>();
-            
+/*            baker.AddAndDisable<ChangeStateRequest_Component>();
+*/            
             baker.AddComponent<State_Component>();
         }
 

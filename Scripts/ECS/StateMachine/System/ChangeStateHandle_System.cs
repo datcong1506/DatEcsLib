@@ -39,7 +39,7 @@ namespace DatECSLib.StateMachine
                 ECBFirst = ecbBegin,
                 ECBSecond = ecbEnd,
             };
-            changeStateJob.ScheduleParallel();
+            state.Dependency = changeStateJob.ScheduleParallel(state.Dependency);
         }
         [BurstCompile]
         private partial struct ChangeStateJob : IJobEntity

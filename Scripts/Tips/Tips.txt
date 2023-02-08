@@ -1,0 +1,11 @@
+#####
+
+How to getShareComponent
+
+1. Use SharedComponentTypeHandle
+You can do this in IJobChunk or IJobEntity if you add IJobEntityChunkBeginEnd then on the ArchetypeChunk call Has(SharedComponentTypeHandle)
+
+2. Using EntityQueryMask
+Create an entityquery with your shared component, call GetEntityQueryMask and pass thiat into your job and use Matches()
+
+3. I actually wrote a SharedComponentLookup https://gitlab.com/tertle/com.bovinelabs.core/-/blob/master/BovineLabs.Core/Iterators/SharedComponentLookup.cs

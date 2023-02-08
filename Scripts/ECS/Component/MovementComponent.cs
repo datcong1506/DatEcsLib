@@ -2,8 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Unity.Entities;
-[System.Serializable]
-public struct MovementComponent : IComponentData
+namespace DatECSLib.StateMachine.Example
 {
-    public float Speed;
+    [System.Serializable]
+    public struct MovementComponent : IComponentData
+    {
+        public float Speed;
+    }
+
 }
